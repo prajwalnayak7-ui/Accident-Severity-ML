@@ -1,0 +1,15 @@
+﻿# Ignore Python virtual environment
+.venv/
+
+# Ignore cache files
+__pycache__/
+
+# Ignore model binaries
+models/*.joblib
+
+# Ignore Jupyter output checkpoints
+.ipynb_checkpoints/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db

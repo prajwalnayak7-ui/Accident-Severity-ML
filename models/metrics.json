@@ -1,0 +1,160 @@
+{
+  "random_forest": {
+    "best_params": {
+      "clf__n_estimators": 200,
+      "clf__min_samples_split": 2,
+      "clf__max_depth": 10
+    },
+    "metrics": {
+      "accuracy": 0.6825,
+      "f1_macro": 0.3753492561602966,
+      "f1_weighted": 0.7186681254364898,
+      "confusion_matrix": [
+        [
+          4,
+          11,
+          1,
+          0
+        ],
+        [
+          48,
+          1139,
+          293,
+          108
+        ],
+        [
+          9,
+          106,
+          211,
+          20
+        ],
+        [
+          1,
+          25,
+          13,
+          11
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.06451612903225806,
+          "recall": 0.25,
+          "f1-score": 0.10256410256410256,
+          "support": 16.0
+        },
+        "1": {
+          "precision": 0.8891491022638564,
+          "recall": 0.7172544080604534,
+          "f1-score": 0.7940048797490414,
+          "support": 1588.0
+        },
+        "2": {
+          "precision": 0.40733590733590735,
+          "recall": 0.6098265895953757,
+          "f1-score": 0.48842592592592593,
+          "support": 346.0
+        },
+        "3": {
+          "precision": 0.07913669064748201,
+          "recall": 0.22,
+          "f1-score": 0.1164021164021164,
+          "support": 50.0
+        },
+        "accuracy": 0.6825,
+        "macro avg": {
+          "precision": 0.36003445731987593,
+          "recall": 0.44927024941395727,
+          "f1-score": 0.3753492561602966,
+          "support": 2000.0
+        },
+        "weighted avg": {
+          "precision": 0.778948045465059,
+          "recall": 0.6825,
+          "f1-score": 0.7186681254364898,
+          "support": 2000.0
+        }
+      }
+    },
+    "model_path": "C:\\Users\\Prateek Nayak\\Documents\\accident-severity-ml\\models\\rf_pipeline.joblib"
+  },
+  "xgboost": {
+    "best_params": {
+      "clf__subsample": 0.8,
+      "clf__n_estimators": 200,
+      "clf__max_depth": 3,
+      "clf__learning_rate": 0.05
+    },
+    "metrics": {
+      "accuracy": 0.7205,
+      "f1_macro": 0.3912223930799791,
+      "f1_weighted": 0.7447657439807471,
+      "confusion_matrix": [
+        [
+          4,
+          11,
+          1,
+          0
+        ],
+        [
+          50,
+          1240,
+          208,
+          90
+        ],
+        [
+          11,
+          138,
+          185,
+          12
+        ],
+        [
+          0,
+          31,
+          7,
+          12
+        ]
+      ],
+      "classification_report": {
+        "0": {
+          "precision": 0.06153846153846154,
+          "recall": 0.25,
+          "f1-score": 0.09876543209876543,
+          "support": 16.0
+        },
+        "1": {
+          "precision": 0.8732394366197183,
+          "recall": 0.7808564231738035,
+          "f1-score": 0.824468085106383,
+          "support": 1588.0
+        },
+        "2": {
+          "precision": 0.4613466334164589,
+          "recall": 0.5346820809248555,
+          "f1-score": 0.49531459170013387,
+          "support": 346.0
+        },
+        "3": {
+          "precision": 0.10526315789473684,
+          "recall": 0.24,
+          "f1-score": 0.14634146341463414,
+          "support": 50.0
+        },
+        "accuracy": 0.7205,
+        "macro avg": {
+          "precision": 0.3753469223673439,
+          "recall": 0.4513846260246647,
+          "f1-score": 0.3912223930799791,
+          "support": 2000.0
+        },
+        "weighted avg": {
+          "precision": 0.7762889668967798,
+          "recall": 0.7205,
+          "f1-score": 0.7447657439807471,
+          "support": 2000.0
+        }
+      }
+    },
+    "model_path": "C:\\Users\\Prateek Nayak\\Documents\\accident-severity-ml\\models\\xgb_pipeline.joblib"
+  },
+  "test_set_size": 2000
+}
